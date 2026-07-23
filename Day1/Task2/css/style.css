@@ -1,0 +1,47 @@
+/* element selector on h2 this will show up */
+/* Specificity: (0,0,0,1) */
+h2 {
+    border: 2px solid red;
+}
+
+/* class selector on h2 using class and it overrides the first style */
+/* Specificity: (0,0,1,0) */
+.heading2 {
+    border: 2px solid black;
+}
+
+/* multi class selector on h2 overrides the single class selector */
+/* Specificity: (0,0,2,0) */
+.heading2.featured {
+    border: 5px solid greenyellow;
+}
+
+/* multi element selector on h2 doesn't override the previous styles */
+/* Specificity: (0,0,0,2) */
+article h2 {
+    border: 10px solid hotpink;
+}
+
+/* element+class selector on h2 doesn't overrride the previous styles */
+/* Specificity: (0,0,1,1) */
+article .heading2{
+    border: 10px solid aqua;
+}
+
+/* ID selector on h2 using id and it overrides all previous styles */
+/* Specificity: (0,1,0,0) */
+#promo-heading {
+    border: 2px solid royalblue;
+}
+
+/* element+ID selector on h2 override all previous styles */
+/* Specificity: (0,1,0,1) */
+h2#promo-heading {
+    border: 5px solid violet;
+}
+
+/* !important keyword overrides every other stylings except inline styles */
+/* I was wrong about this one, as this is the one with the highest weightage */
+h2{
+    border: 2px solid burlywood !important;
+}

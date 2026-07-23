@@ -1,0 +1,60 @@
+nav {
+    background: gray;
+    padding: 15px;
+}
+
+nav a {
+    color:white;
+    padding: 10px 20px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+/* :hover works when mouse is pointed on an element */
+nav a:hover {
+    background: #555;
+}
+
+/* :focus-visible shows focus when keyboard navigation needs a visible focus indicator */
+nav a:focus-visible {
+    outline: 2px solid yellow;
+}
+
+label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: "yes";
+    position: absolute;
+    left: 0;
+}
+
+ol {
+    counter-reset: item;
+    list-style: none;
+}
+
+ol li {
+    counter-increment: item
+}
+
+ol li::before {
+    content:counter(item) ": ";
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    visibility: hidden;
+}
+
+.tooltip:hover::after {
+    visibility: visible;
+}

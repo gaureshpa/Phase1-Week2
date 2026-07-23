@@ -1,0 +1,69 @@
+/* Select every second li using nth-child */
+li:nth-child(even){
+    background-color: yellow;
+}
+
+/* select all email inputs */
+input[type="email"] {
+    border: 2px solid blue;
+}
+
+/* select elements with class='card' and class='featured' */
+.card.featured {
+    background-color: goldenrod;
+}
+
+/* select the first p directly inside an article */
+article > p:first-child{
+    color:darkmagenta;
+}
+
+/* select p elements immediately preceeded by an h2 */
+h2 + p {
+    font-weight: bold;
+}
+
+/* rules using all five psuedo-classes */
+
+a:hover{
+    background: yellow;
+    color:black;
+}
+
+input:focus{
+    background-color: aqua;
+}
+
+li:first-child{
+    font-weight: bolder;
+}
+
+li:last-child{
+    font-style: italic;
+}
+
+li:nth-child(3n+1){
+    border: 2px solid orangered;
+}
+
+/* ::before tag */
+h2::before{
+    content:"<<";
+    color: orange;
+}
+
+/* ::after tag */
+h2:after{
+    content: ">>";
+    color:orange
+}
+
+/* external link styling */
+a[href^="https"]{
+    color:indigo
+}
+
+/* internal link styling */
+a[href^="#"]{
+    color: green;
+}

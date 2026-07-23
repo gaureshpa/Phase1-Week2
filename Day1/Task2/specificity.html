@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifity Battle</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Specifity Battle</h1>
+
+    <article class="app-promo">
+        <!-- Inline CSS should override everything -->
+         <!-- I was wrong about this. !important has the highest priority -->
+          <!-- Specificity: (1,0,0,0) -->
+        <h2 class="heading2 featured" id="promo-heading">
+                Why switch to our app?
+        </h2>
+
+        <p>
+            Our app comes with a brand new modern UI that is very user friendly and easy to use.
+        </p>
+
+        <p>
+            The app is fully secure and safe from any external attacks and your data is safe with us.
+        </p>
+
+    </article>
+</body>
+</html>

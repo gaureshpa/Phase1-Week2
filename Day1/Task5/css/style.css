@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-family: "Bree Serif", sans-serif;
+}
+
+.p1 {
+    font-size: 1.2rem;
+}
+
+.p2 {
+    font-size: 1.4rem;
+}
+
+.p3 {
+    font-size: 1.6rem;
+}
+
+.p4 {
+    font-size: 1.8rem;
+}
+
+.p5 {
+    font-size: 2.0rem;
+}
+
+.p6 {
+    font-size: 2.4rem;
+}
+
+.p7 {
+    font-size: 3.0rem;
+}
+
+.p8 {
+    font-size: 3.6rem;
+}
+
+.p9{
+    font-size: 4.8rem;
+}
+
+.p10{
+    font-size: 6.0rem;
+}
+
+.text1 {
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+}
+
+.text2 {
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.text3{
+    font-weight: 500;
+    font-family: "Bree Serif", sans-serif;
+    word-spacing: 1em;
+}
+
+.text4 {
+    font-weight: 600;
+}
+
+.text5 {
+    font-weight: 700;
+}
+
+.truncate {
+    width: 300px;
+    padding: 1rem;
+    border: 2px solid black;
+    background-color: lightyellow;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
